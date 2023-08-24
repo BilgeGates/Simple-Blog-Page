@@ -5,12 +5,13 @@
 <hr />
 <h2>🍿 Features </h2>
 <ul>   
-   <li>Responsive</li>
-</ul><hr />
+<li>Responsive</li>
+</ul>
+<hr />
 <h2>🍿 Technologies </h2>
 <ul>
-   <li>HTML</li>
-   <li>CSS</Li>
+<li>HTML</li>
+<li>CSS</Li>
 </ul>
 <hr />
 <h2>🍿 How to Run the Website on Your System </h2>
