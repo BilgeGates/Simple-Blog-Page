@@ -1,117 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
     />
-    <title>Blog</title>
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Raleway", sans-serif;
+      }
+    </style>
+    <title>Blog Page</title>
   </head>
-  <body>
-    <div class="m-1">
-      <p class="display-2 text-center">My Blog</p>
-      <p class="text-center lead">
-        Welcome to the blog of <mark class="bg-dark text-white">unknown</mark>
-      </p>
-      <div class="row">
-        <div class="col-lg-9">
-          <div class="card c-card">
-            <img class="card-img-top" src="img/woods.jpg" />
-            <div class="container">
-              <div class="card-title">
-                <h4>TITLE HEADING</h4>
+  <body class="blog-light-grey">
+    <div class="blog-content" style="max-width: 1400px">
+      <header class="blog-container blog-center blog-padding-32">
+        <h1><b>MY BLOG</b></h1>
+        <p>Welcome to the blog of <span class="blog-tag">unknown</span></p>
+      </header>
+      <div class="blog-row">
+        <div class="blog-col l8 s12">
+          <div class="blog-card-4 blog-margin blog-white">
+            <img src="./img/woods.jpg" alt="Nature" style="width: 100%" />
+            <div class="blog-container">
+              <h3><b>TITLE HEADING</b></h3>
+              <h5>
+                Title description,
+                <span class="blog-opacity">April 7, 2014</span>
+              </h5>
+            </div>
+            <div class="blog-container">
+              <p>
+                Mauris neque quam, fermentum ut nisl vitae, convallis maximus
+                nisl. Sed mattis nunc id lorem euismod placerat. Vivamus
+                porttitor magna enim, ac accumsan tortor cursus at. Phasellus
+                sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+                tellus ut rutrum. Sed vitae justo condimentum, porta lectus
+                vitae, ultricies congue gravida diam non fringilla.
+              </p>
+              <div class="blog-row">
+                <div class="blog-col m8 s12">
+                  <p>
+                    <button
+                      class="blog-button blog-padding-large blog-white blog-border"
+                    >
+                      <b>READ MORE »</b>
+                    </button>
+                  </p>
+                </div>
+                <div class="blog-col m4 blog-hide-small">
+                  <p>
+                    <span class="blog-padding-large blog-right"
+                      ><b>Comments  </b> <span class="blog-tag">0</span></span
+                    >
+                  </p>
+                </div>
               </div>
-              <span class="mt-2"
-                >Title description,
-                <span class="text-muted">April 7, 2014</span>
-              </span>
-              <div class="card-text mt-3">
-                <p>
-                  Mauris neque quam, fermentum ut nisl vitae, convallis maximus
-                  nisl. Sed mattis nunc id lorem euismod placerat. Vivamus
-                  porttitor magna enim, ac accumsan tortor cursus at. Phasellus
-                  sed ultricies mi non congue ullam corper. Praesent tincidunt
-                  sed tellus ut rutrum. Sed vitae justo condimentum, porta
-                  lectus vitae, ultricies congue gravida diam non fringilla.
-                </p>
-              </div>
-              <div class="card-end">
-                <button class="button border-dark mb-1">READ MORE>></button>
-                <span>Comments <mark class="text-white bg-dark">o</mark> </span>
+            </div>
+          </div>
+          <hr />
+          <div class="blog-card-4 blog-margin blog-white">
+            <img src="./img/bridge.jpg" alt="Norway" style="width: 100%" />
+            <div class="blog-container">
+              <h3><b>BLOG ENTRY</b></h3>
+              <h5>
+                Title description,
+                <span class="blog-opacity">April 2, 2014</span>
+              </h5>
+            </div>
+            <div class="blog-container">
+              <p>
+                Mauris neque quam, fermentum ut nisl vitae, convallis maximus
+                nisl. Sed mattis nunc id lorem euismod placerat. Vivamus
+                porttitor magna enim, ac accumsan tortor cursus at. Phasellus
+                sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+                tellus ut rutrum. Sed vitae justo condimentum, porta lectus
+                vitae, ultricies congue gravida diam non fringilla.
+              </p>
+              <div class="blog-row">
+                <div class="blog-col m8 s12">
+                  <p>
+                    <button
+                      class="blog-button blog-padding-large blog-white blog-border"
+                    >
+                      <b>READ MORE »</b>
+                    </button>
+                  </p>
+                </div>
+                <div class="blog-col m4 blog-hide-small">
+                  <p>
+                    <span class="blog-padding-large blog-right"
+                      ><b>Comments  </b> <span class="blog-badge">2</span></span
+                    >
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="card c-card">
-            <img class="card-img-top" src="img/avatar.jpg" />
-            <div class="container">
-              <div class="card-title">
-                <h4>My Name</h4>
-              </div>
-              <div class="card-text mt-3 mb-2">
+        <div class="blog-col l4">
+          <div class="blog-card blog-margin blog-margin-top">
+            <img src="./img/avatar.jpg" style="width: 100%" />
+            <div class="blog-container blog-white">
+              <h4><b>My Name</b></h4>
+              <p>
                 Just me, myself and I, exploring the universe of uknownment. I
                 have a heart of love and a interest of lorem ipsum and mauris
                 neque quam blog. I want to share my world with you.
-              </div>
+              </p>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col-lg-9">
-          <div class="card c-card">
-            <img class="card-img-top" src="img/bridge.jpg" />
-            <div class="container">
-              <div class="card-title">
-                <h4>BLOG ENTRY</h4>
-              </div>
-              <span class="mt-2"
-                >Title description,
-                <span class="text-muted">April 2, 2014</span>
-              </span>
-              <div class="card-text mt-3">
-                <p>
-                  Mauris neque quam, fermentum ut nisl vitae, convallis maximus
-                  nisl. Sed mattis nunc id lorem euismod placerat. Vivamus
-                  porttitor magna enim, ac accumsan tortor cursus at. Phasellus
-                  sed ultricies mi non congue ullam corper. Praesent tincidunt
-                  sed tellus ut rutrum. Sed vitae justo condimentum, porta
-                  lectus vitae, ultricies congue gravida diam non fringilla.
-                </p>
-              </div>
-              <div class="card-end">
-                <button class="button border-dark mb-1">READ MORE>></button>
+          <hr />
+          <div class="blog-card blog-margin">
+            <div class="blog-container blog-padding">
+              <h4>Popular Posts</h4>
+            </div>
+            <ul class="blog-ul blog-hoverable blog-white">
+              <li class="blog-padding-16">
+                <img
+                  src="./img/avatar.jpg"
+                  alt="Image"
+                  class="blog-left blog-margin-right"
+                  style="width: 50px"
+                />
+                <span class="blog-large">Lorem</span><br />
+                <span>Sed mattis nunc</span>
+              </li>
+              <li class="blog-padding-16">
+                <img
+                  src="./img/avatar.jpg"
+                  alt="Image"
+                  class="blog-left blog-margin-right"
+                  style="width: 50px"
+                />
+                <span class="blog-large">Ipsum</span><br />
+                <span>Praes tinci sed</span>
+              </li>
+              <li class="blog-padding-16">
+                <img
+                  src="./img/avatar.jpg"
+                  alt="Image"
+                  class="blog-left blog-margin-right"
+                  style="width: 50px"
+                />
+                <span class="blog-large">Dorum</span><br />
+                <span>Ultricies congue</span>
+              </li>
+              <li class="blog-padding-16 blog-hide-medium blog-hide-small">
+                <img
+                  src="./img/avatar.jpg"
+                  alt="Image"
+                  class="blog-left blog-margin-right"
+                  style="width: 50px"
+                />
+                <span class="blog-large">Mingsum</span><br />
+                <span>Lorem ipsum dipsum</span>
+              </li>
+            </ul>
+          </div>
+          <hr />
+          <div class="blog-card blog-margin">
+            <div class="blog-container blog-padding">
+              <h4>Tags</h4>
+            </div>
+            <div class="blog-container blog-white">
+              <p>
+                <span class="blog-tag blog-black blog-margin-bottom"
+                  >Travel</span
+                >
                 <span
-                  >Comments <mark class="text-white bg-dark c-mark">2</mark>
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="card">
-            <div class="card-title p-4 bg-dark text-white">Tags</div>
-            <div class="card-text tags">
-              <span class="btn ms-1 bg-dark text-white">Sport</span>
-              <span class="btn">Sport</span>
-              <span class="btn">Sport</span>
-              <span class="btn">Sport</span>
-              <span class="btn mt-1 ms-1 mb-1">Sport</span>
-              <span class="btn mt-1 mb-1">Sport</span>
+                  class="blog-tag blog-light-grey blog-small blog-margin-bottom"
+                  >New York</span
+                >
+                <span
+                  class="blog-tag blog-light-grey blog-small blog-margin-bottom"
+                  >London</span
+                >
+                <span
+                  class="blog-tag blog-light-grey blog-small blog-margin-bottom"
+                  >IKEA</span
+                >
+                <span
+                  class="blog-tag blog-light-grey blog-small blog-margin-bottom"
+                  >NORWAY</span
+                >
+                <span
+                  class="blog-tag blog-light-grey blog-small blog-margin-bottom"
+                  >DIY</span
+                >
+                <span
+                  class="blog-tag blog-light-grey blog-small blog-margin-bottom"
+                  >Ideas</span
+                >
+                <span
+                  class="blog-tag blog-light-grey blog-small blog-margin-bottom"
+                  >Baby</span
+                >
+                <span
+                  class="blog-tag blog-light-grey blog-small blog-margin-bottom"
+                  >Family</span
+                >
+                <span
+                  class="blog-tag blog-light-grey blog-small blog-margin-bottom"
+                  >News</span
+                >
+                <span
+                  class="blog-tag blog-light-grey blog-small blog-margin-bottom"
+                  >Clothing</span
+                >
+                <span
+                  class="blog-tag blog-light-grey blog-small blog-margin-bottom"
+                  >Shopping</span
+                >
+                <span
+                  class="blog-tag blog-light-grey blog-small blog-margin-bottom"
+                  >Sports</span
+                >
+                <span
+                  class="blog-tag blog-light-grey blog-small blog-margin-bottom"
+                  >Games</span
+                >
+              </p>
             </div>
           </div>
         </div>
       </div>
+      <br />
     </div>
-    <footer class="p-5">
-      <button class="button disabled">Previos</button>
-      <button class="button bg-dark text-white">Next>></button>
-      <p class="mt-4">Powered by w3.css</p>
+    <footer
+      class="blog-container blog-dark-grey blog-padding-32 blog-margin-top"
+    >
+      <button
+        class="blog-button blog-black blog-disabled blog-padding-large blog-margin-bottom"
+      >
+        Previous
+      </button>
+      <button
+        class="blog-button blog-black blog-padding-large blog-margin-bottom"
+      >
+        Next »
+      </button>
+      <p>
+        Powered by
+        <a href="https://www.github.com/BilgeGates" target="_blank"
+          >W3Schools</a
+        >
+      </p>
     </footer>
   </body>
 </html>
