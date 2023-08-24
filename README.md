@@ -1,7 +1,7 @@
 <h1 align="center">Simple Blog Page</h1>
 <p>This simple blog project was created using HTML and CSS. The project allows visitors to quickly review content and find the most popular posts. The page design has been created in a minimalist way so that visitors can navigate and access content comfortably.</p>
 <hr />
-<img src="./img/project__image/Project.jpg" >
+<img src="./img/Project.jpg" >
 <hr />
 <h2>🍿 Features </h2>
 <ul>   
